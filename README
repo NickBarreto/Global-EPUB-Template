@@ -1,0 +1,8 @@
+====================
+Global EPUB Template
+====================
+Creator: Nick Barreto
+
+This project is aimed at being a global EPUB template with a variety of built-in styles that not only look good, but degrade well. 
+
+Some of the CSS may not look like it is ideal, but because KF8 bundles in a mobi7 version together with every file, you can't separate the development of these two anymore. So the CSS and the HTML in this template is designed with mobi7 in mind, so that the design degrades gracefully into mobi7, while looking its absolute best in a fully compliant, up to date EPUB or kindle device.
