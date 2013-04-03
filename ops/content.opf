@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="bookid">
+        <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:opf="http://www.idpf.org/2007/opf">
+                <dc:title>Book Title</dc:title>
+                <dc:creator opf:role="aut" opf:file-as="Name, Author">Author Name</dc:creator>
+                <dc:date>YYYY</dc:date>
+                <dc:identifier id="bookid">ISBN</dc:identifier>
+                <dc:format>1</dc:format>
+                <dc:type>Text</dc:type>
+                <dc:language>en</dc:language>
+                <dc:rights>All Rights Reserved</dc:rights>
+                <dc:publisher>Publisher Name</dc:publisher>
+                <meta name="cover" content="cover-image"/>
+        </metadata>
+        <manifest>
+                <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+                <item id="stylesheet" href="styles/Stylesheet.css" media-type="text/css"/>
+                <item id="pt" href="styles/page-template.xpgt"
+                        media-type="application/vnd.adobe-page-template+xml"/>
+                <item id="cover-image" href="images/ISBN.jpg" media-type="image/jpeg"/>
+                <item id="cover" href="xhtml/cover.html" media-type="application/xhtml+xml"/>
+                <item id="title" href="xhtml/title.html" media-type="application/xhtml+xml"/>
+                <item id="copy" href="xhtml/copyright.html" media-type="application/xhtml+xml"/>
+                <item id="prelim01" href="xhtml/prelim01.html" media-type="application/xhtml+xml"/>
+                <item id="half" href="xhtml/halftitle.html" media-type="application/xhtml+xml"/>
+                <item id="ch01" href="xhtml/ch01.html" media-type="application/xhtml+xml"/>
+                <item id="ch02" href="xhtml/ch02.html" media-type="application/xhtml+xml"/>
+        </manifest>
+        <spine xmlns="http://www.idpf.org/2007/opf" toc="ncx">
+                <itemref idref="cover" linear="no"/>
+                <itemref idref="title"/>
+                <itemref idref="copy"/>
+                <itemref idref="prelim01"/>
+                <itemref idref="half"/>
+                <itemref idref="ch01"/>
+                <itemref idref="ch02"/>
+        </spine>
+        <guide>
+                <reference href="xhtml/cover.html" type="cover" title="Cover"/>
+                <reference href="xhtml/title.html" type="text" title="start"/>
+        </guide>
+</package>

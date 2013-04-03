@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en-gb" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Book Title</title>
+<link rel="stylesheet" type="text/css" href="../styles/Stylesheet.css"/>
+<link rel="stylesheet" type="application/vnd.adobe-page-template+xml" href="../styles/page-template.xpgt"/>
+</head>
+<body>
+<h2 class="chaptertitle">Chapter Title</h2>
+    <p class="noindent">When it is the first paragraph in a section, it should be styled the same as this paragraph.</p>
+    <p class="indent">This is a normal paragraph. Normal regular paragraphs should always use this style. This is the style for a normal paragraph, those which follow the first, non-indented paragaph.</p>
+    <p class="break">*</p>
+    <p class="noindent">The break class with a single astersik above should be used in <em>every</em> instance of a scene break. In print books, the asterisk is only used when the scene break appears at the bottom of a page. Otherwise it is merely denoted by a blank space between paragraphs. The next paragraph after the space is not indented as this one.</p>
+    <p class="indent">In our ebooks, every time there is a break the asterisk should be included. Even if there wasn't one in the print book. Some books will use a different character or image in the break scenes, and if this is the case, that character or image should replace the asterisk in every instance.</p>
+    <p class="indent">If there is an image in the text, this is the default way to present it. Be careful that images that are significantly smaller than a kindle's screen will appear pixelated unless you explicitly include that image's pixel height and width as attributes in the img element.</p>
+    <div class="group">
+        <p class="image"><!-- <img src="" alt="" height="" width="" --></p>
+        <p class="caption">This is the caption to the image above.</p>
+    </div>
+    <p class="noindent">If there is a blockquote, it should be styled as below. Note the use of the containing div to create space from the previous paragraph. This is important because in mobi7 an element can not have both a margin-top and a margin-left.</p>
+    <div class="block">
+        <p class="blockquote">This is the text to a blockquote. It is visually separated from the paragraphs surrounding it.</p>
+        <p class="blockquote1">This is a second paragraph within a blockquote. It is indented, but close to the paragraphs preceding it.</p>
+    </div>
+    <div class="block">
+        <p class="blockquote">If there is a space between blockquote paragraphs, use a second div block to separate them. Do not use a paragraph that has both margin-left and margin-top, as this will get ignored in mobi7.</p>
+    </div>
+    <p class="noindent">After a blockquote, the paragraph should not be indented, as this shows.</p>
+    <p class="center">Centered text should use this style.</p>
+    <p class="noindent">If <strong>bold</strong> text is necessary, use the strong element. Do not use the strong or em elements to encase an entire paragraph. This is better achieved by using a paragraph style that has a bold or italic CSS declaration.</p>
+    </body>
+</html>

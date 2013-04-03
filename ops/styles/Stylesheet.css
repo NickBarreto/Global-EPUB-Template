@@ -1,0 +1,176 @@
+body
+{
+    /*Otherwise page 'numbers' in ADE overlay the text*/
+    margin-right:2pt;
+}
+p{
+    widows:2;
+    orphans:2;
+    margin:0;
+    text-indent:0;
+    -webkit-hyphenate-before:3;
+    hyphenate-before:3;
+    -webkit-hyphenate-after:3;
+    hyphenate-after:3;
+    -webkit-hyphenate-lines:2;
+    hyphenate-lines:2;
+}
+svg
+{
+    height:98%;
+    width:100%
+}
+.titleimg{
+    margin:0;
+    text-align:center;
+}
+.title
+{
+    font-size:3em;
+    margin:1em 0;
+    text-align:center;
+    font-weight:bold;
+}
+.author
+{
+    font-size:2em;
+    margin:1em 0 0 0;
+    text-indent:0;
+    text-align:center;
+}
+.publisher
+{
+    margin:100px 0 0 0;
+    text-align:center;
+}
+.chaptertitle
+{
+    font-size:2em;
+    margin:1em 0;
+    text-indent:0;
+    text-align:center;
+    font-weight:bold;
+}
+.dedtitle
+{
+    font-size:2em;
+    margin-top:1em;
+    margin-bottom:1em;
+    text-indent:0;
+    text-align:center;
+}
+.h1
+{
+    font-size:3em;
+    margin:1em 0;
+    text-indent:0;
+    text-align:center;
+    font-weight:bold;
+}
+.h2
+{
+    font-size:2em;
+    margin:1em 0;
+    text-indent:0;
+    text-align:center;
+    font-weight:bold;
+}
+.h3
+{
+    font-size:1em;
+    margin:1em 0;
+    text-indent:0;
+    text-align:left;
+    font-weight:bold;
+}
+.h4
+{
+    font-size:1em;
+    margin:1em 0 0 0;
+    text-indent:0;
+    text-align:left;
+    font-style:italic;
+    font-weight:bold;
+}
+.h5
+{
+    font-size:1em;
+    margin:1em 0 0 0;
+    text-indent:0;
+    text-align:left;
+    font-style:italic;
+    font-weight:normal;
+}
+.h6
+{
+    font-size:1em;
+    margin:1em 0 0 0;
+    text-align:left;
+    text-indent:0;
+    font-weight:normal;
+}
+.noindent
+{
+    margin:1em 0 0 0;
+    text-indent:0;
+}
+.indent
+{
+    margin:0;
+    text-indent:1em;
+}
+.break{
+    margin:1em 0 0 0;
+    text-align:center;
+}
+.copyright
+{
+    margin:1em 0 0 0;
+    text-align:center;
+}
+.center
+{
+    font-size:1em;
+    margin:0;
+    text-align:center;
+}
+.block
+{
+    margin:1em 0 0 0;
+}
+.blockquote
+{
+    margin:0 2em;
+    text-indent:0;
+}
+.blockquote1
+{
+    margin:0 2em;
+    text-indent:1em;
+}
+div.group
+{
+    page-break-inside:avoid;
+}
+.image
+{
+    margin:1em 0;
+    text-align:center;
+}
+.caption
+{
+    margin:0 0 1em 0;
+    text-align:center;
+    font-size:small;
+}
+/*Each line of poetry should be its own p element with this class.*/
+.poem{
+    margin:0 0 0 2em;
+    text-indent:-1em;
+}
+@media amzn-mobi{
+    .poem{
+        margin:0;
+        text-indent:-1em;
+    }
+}
